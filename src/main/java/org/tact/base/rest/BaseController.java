@@ -32,6 +32,11 @@ public class BaseController {
         map.put("five", "six");
         map.put("seven", "eight");
         
+        _log.debug("debug message");
+        _log.info("This is an info message");
+        _log.warn("Warning for this application");
+        _log.error("Seems error in the application");
+        
         _log.info("listUsers");
         
         return (T) map;
